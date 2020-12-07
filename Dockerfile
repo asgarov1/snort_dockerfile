@@ -7,7 +7,7 @@ libyaml-dev libxml2-dev libxslt1-dev openssl libreadline6-dev unzip libcurl4-ope
 supervisor gettext-base libdumbnet-dev libpcap-dev python-pip libpcap-dev libdnet libdumbnet-dev luajit wkhtmltopdf \
 apt-utils -y
 
-RUN cd /tmp
+RUN cd /tmp \
     && wget https://www.snort.org/downloads/snort/daq-2.0.7.tar.gz \
     && wget https://www.snort.org/downloads/snort/snort-2.9.17.tar.gz \
     && tar xvzf daq-2.0.7.tar.gz \
